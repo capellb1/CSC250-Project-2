@@ -9,10 +9,32 @@ public class TrReader extends Reader {
      *  corresponding characters in TO.  That is, change occurrences of
      *  FROM.charAt(0) to TO.charAt(0), etc., leaving other characters
      *  unchanged.  FROM and TO must have the same length. */
+     private Reader readerObject;
+     private int fromR;
+     private int
+
     public TrReader(Reader str, String from, String to) {
-        // FILL IN
+		readerObject = str;
+
+       // FILL IN
     }
 
+    public int read(char c[])
+    {
+		//translate chars betweeen "from" and to" and store in c
+	}
+
+	@Override
+	public int read(char c[], int a, int b)
+	{
+		readerObject.read(c,a,b);
+	}
+
+	@Override
+	public void close()
+	{
+		readerObject.close();
+	}
     // FILL IN
     // NOTE: Until you fill in the right methods, the compiler will
     //       reject this file, saying that you must declare TrReader
