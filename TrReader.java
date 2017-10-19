@@ -11,10 +11,12 @@ public class TrReader extends Reader {
      *  unchanged.  FROM and TO must have the same length. */
      private Reader readerObject;
      private int fromR;
-     private int
+     private int toR;
 
     public TrReader(Reader str, String from, String to) {
 		readerObject = str;
+		fromR = from;
+		toR = to;
 
        // FILL IN
     }
