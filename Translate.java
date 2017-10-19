@@ -20,5 +20,6 @@ public class Translate {
          other kinds of statement (other than return).
       c. Use only the library classes String, and anything containing
          "Reader" in its name (browse the on-line documentation).
+         Does this work?
     */
 }
