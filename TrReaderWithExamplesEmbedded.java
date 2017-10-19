@@ -1,4 +1,4 @@
-    import java.io.Reader;
+import java.io.Reader;
 import java.io.IOException;
 
 /** Translating Reader: a stream that is a translation of an
